@@ -1,6 +1,7 @@
 package ch.freakness109.EnderMod;
 
 import ch.freakness109.EnderMod.handler.ConfigurationHandler;
+import ch.freakness109.EnderMod.init.ModBlocks;
 import ch.freakness109.EnderMod.init.ModItems;
 import ch.freakness109.EnderMod.proxy.IProxy;
 import ch.freakness109.EnderMod.reference.Reference;
@@ -25,9 +26,12 @@ public class EnderMod {
     @Mod.EventHandler
     public void preinit(FMLPreInitializationEvent event) {
         LogHelper.info("Preinit Starting");
+
         FMLCommonHandler.instance().bus().register(new ConfigurationHandler());
         ConfigurationHandler.init(event.getSuggestedConfigurationFile());
+
         ModItems.init();
+        ModBlocks.init();
     }
 
     @Mod.EventHandler
