@@ -18,7 +18,7 @@ buildscript {
 apply plugin: 'forge'
 
 version = "1.0"
-group = "ch.freakness109.EnderMod" // http://maven.apache.org/guides/mini/guide-naming-conventions.html
+group = "ch.freakness109.endermod" // http://maven.apache.org/guides/mini/guide-naming-conventions.html
 archivesBaseName = "modid"
 
 minecraft {
