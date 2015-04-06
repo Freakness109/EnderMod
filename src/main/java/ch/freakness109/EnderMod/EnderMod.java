@@ -3,6 +3,7 @@ package ch.freakness109.EnderMod;
 import ch.freakness109.EnderMod.handler.ConfigurationHandler;
 import ch.freakness109.EnderMod.init.ModBlocks;
 import ch.freakness109.EnderMod.init.ModItems;
+import ch.freakness109.EnderMod.init.ModRecipies;
 import ch.freakness109.EnderMod.proxy.IProxy;
 import ch.freakness109.EnderMod.reference.Reference;
 import ch.freakness109.EnderMod.utility.LogHelper;
@@ -37,6 +38,7 @@ public class EnderMod {
     @Mod.EventHandler
     public void init(FMLInitializationEvent event) {
         LogHelper.info("Init Starting");
+        ModRecipies.init();
     }
 
     @Mod.EventHandler
