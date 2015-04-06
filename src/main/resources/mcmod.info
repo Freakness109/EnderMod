@@ -1,0 +1,21 @@
+[
+{
+  "modid": "EnderMod",
+  "name": "EnderMod",
+  "description": "A mod that adds a few things about the End and Enderman",
+  "version": "1.0",
+  "mcversion": "1.7.10",
+  "url": "",
+  "updateUrl": "",
+  "authorList": [
+    "Freakness109"
+  ],
+  "credits": "",
+  "logoFile": "",
+  "screenshots": [
+  ],
+  "parent":"",
+  "dependencies": [
+  ]
+}
+]
