@@ -2,6 +2,7 @@ package ch.freakness109.EnderMod.init;
 
 import ch.freakness109.EnderMod.blocks.BlockEnderMod;
 import ch.freakness109.EnderMod.blocks.CondensedEnderBlock;
+import ch.freakness109.EnderMod.reference.Names;
 import cpw.mods.fml.common.registry.GameRegistry;
 
 /**
@@ -11,6 +12,6 @@ public class ModBlocks {
     public static final BlockEnderMod condensedEnderBlock = new CondensedEnderBlock();
 
     public static void init() {
-        GameRegistry.registerBlock(condensedEnderBlock, "condensedEnderBlock");
+        GameRegistry.registerBlock(condensedEnderBlock, Names.CONDENSED_ENDER_BLOCK);
     }
 }
