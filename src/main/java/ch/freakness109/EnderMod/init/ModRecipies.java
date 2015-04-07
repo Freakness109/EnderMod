@@ -14,5 +14,6 @@ public class ModRecipies {
         GameRegistry.addShapelessRecipe(new ItemStack(ModItems.condensedEnder, 9), new ItemStack(ModBlocks.condensedEnderBlock));
         GameRegistry.addShapelessRecipe(new ItemStack(Items.ender_pearl, 9), new ItemStack(ModItems.condensedEnder));
         GameRegistry.addRecipe(new ItemStack(ModItems.condensedEnderSword), " e ", " e ", " s ", 'e', new ItemStack(ModItems.condensedEnder), 's', new ItemStack(Items.stick));
+        GameRegistry.addRecipe(new ItemStack(ModItems.chargedEnderSword), "ene", "ese", "eee", 'e', new ItemStack(ModItems.condensedEnder), 'n', new ItemStack(Items.nether_star), 's', new ItemStack(ModItems.condensedEnderSword));
     }
 }
