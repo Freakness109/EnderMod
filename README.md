@@ -1,3 +1,2 @@
 # EnderMod
-A mod about "enderthings"
-Suggestions are appreciated!
+A mod about "enderthings" - Suggestions are appreciated!
