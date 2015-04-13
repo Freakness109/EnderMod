@@ -33,6 +33,8 @@ public class EnderMod {
 
         ModItems.init();
         ModBlocks.init();
+
+        proxy.registerKeyBindings();
     }
 
     @Mod.EventHandler
