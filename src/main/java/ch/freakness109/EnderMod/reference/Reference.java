@@ -7,4 +7,6 @@ public class Reference {
     public static final String SERVER_PROXY_CLASS = "ch.freakness109.EnderMod.proxy.ServerProxy";
     public static final String CLIENT_PROXY_CLASS = "ch.freakness109.EnderMod.proxy.ClientProxy";
     public static final String GUI_FACTORY_CLASS = "ch.freakness109.EnderMod.client.gui.GuiFactory";
+    public static final String CONDENSED_ENDER_TOOL_MATERIAL = "condensedEnder";
+    public static final String CHARGED_ENDER_TOOL_MATERIAL = "chargedEnder";
 }
