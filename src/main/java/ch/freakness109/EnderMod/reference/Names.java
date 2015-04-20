@@ -5,8 +5,8 @@ public class Names {
     public static final String CONDENSED_ENDER = "condensedEnder";
     public static final String CONDENSED_ENDER_SWORD = "condensedEnderSword";
     public static final String CHARGED_ENDER_SWORD = "chargedEnderSword";
-    public static final String WAYPOINT_REMOVER = "waypointRemover";
     public static final String HEALTH_STORAGE = "healthStorage";
+    public static final String HEALTH_STORAGE_CREATIVE = "healthStorageCreative";
 
     //Blocks
     public static final String CONDENSED_ENDER_BLOCK = "condensedEnderBlock";

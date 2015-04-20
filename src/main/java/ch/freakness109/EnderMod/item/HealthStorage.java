@@ -24,10 +24,12 @@ public class HealthStorage extends ItemEnderMod {
                 //only damage player if not in creative
                 player.setHealth(player.getHealth() - 1);
             }
+            //Write Health to NBT
             NBTHelper.setFloat(itemStack, "healthStored", NBTHelper.getFloat(itemStack, "healthStored") + 1);
             return itemStack;
         }
         if (player.shouldHeal() && (NBTHelper.getFloat(itemStack, "healthStored") > 0)) {
+            //if enough health, remove 1 and heal player
             NBTHelper.setFloat(itemStack, "healthStored", NBTHelper.getFloat(itemStack, "healthStored") - 1);
             player.setHealth(player.getHealth() + 1);
         }
@@ -39,9 +41,4 @@ public class HealthStorage extends ItemEnderMod {
         list.add(StatCollector.translateToLocal("tooltip.healthStorage1") + " " + String.valueOf(NBTHelper.getFloat(stack, "healthStored") / 2) + StatCollector.translateToLocal("tooltip.healthStorage2"));
     }
 
-
-    @Override
-    public boolean onItemUse(ItemStack p_77648_1_, EntityPlayer p_77648_2_, World p_77648_3_, int p_77648_4_, int p_77648_5_, int p_77648_6_, int p_77648_7_, float p_77648_8_, float p_77648_9_, float p_77648_10_) {
-        return true;
-    }
 }
